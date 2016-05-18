@@ -23,16 +23,14 @@ function browserRedirect() {
         var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile";
 
         if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-                url = 'http://192.168.1.102/mobile';
-        } else {
-                url = 'http://princess.starshine.name';
+                url = '/mobile';
         }
         return false;
 }
 window.onload = browserRedirect();
 </script>
 </head>
-<body onLoad="location.href=url;">
+<body onLoad="if(url)location.href=url;">
 <!-- Preloader -->
 <div id="preloader">
 	<div class="item-inner">
