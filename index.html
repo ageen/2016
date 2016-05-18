@@ -9,8 +9,30 @@
 <link rel="stylesheet" type="text/css" href="css/clouds.css">
 <link rel="stylesheet" type="text/css" href="css/balloon.css">
 <link rel="stylesheet" type="text/css" href="css/ball-spin-rotate.min.css">
+<script type="text/javascript">
+var url;
+function browserRedirect() {
+        var sUserAgent= navigator.userAgent.toLowerCase();
+        var bIsIpad= sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs= sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp= sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7= sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc= sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid= sUserAgent.match(/android/i) == "android";
+        var bIsCE= sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile";
+
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+                url = 'http://192.168.1.102/mobile';
+        } else {
+                url = 'http://princess.starshine.name';
+        }
+        return false;
+}
+window.onload = browserRedirect();
+</script>
 </head>
-<body>
+<body onLoad="location.href=url;">
 <!-- Preloader -->
 <div id="preloader">
 	<div class="item-inner">
