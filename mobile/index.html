@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>2016</title>
+<link rel="stylesheet" type="text/css" href="../css/style.mobile.css">
+<link rel="stylesheet" type="text/css" href="../css/balloon.css">
+<link rel="stylesheet" type="text/css" href="../css/ball-spin-rotate.min.css">
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader">
+	<div class="item-inner">
+        <div class="item-loader-container">
+            <div class="la-ball-spin-rotate la-2x">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="container" style="display:none;">
+	<div id="far-clouds" class="stage far-clouds"></div>
+    <div id="near-clouds" class="stage near-clouds"></div>
+
+    <div class="header">
+    	<div class="branch_repeat"></div>
+    	<div class="branch_left"></div>
+    	<div class="branch_right"></div>
+    	<div class="lucky_grass_left"></div>
+    	<div class="lucky_grass_right"></div>
+    	<div class="pistill"><img id="pistill" src="images/pistill.png" width="0"></div>
+    	<div class="star"><img id="star" src="images/star.png"></div>
+    	<div class="meteor" id="meteor" style="display:none;"><img src="images/meteor.png"></div>
+    	<div class="clear" style="height:30px;"></div>
+    	<div class="header_banner">
+    		<div class="rainbow" id="rainbow"><div style="overflow:hidden;width:0px;"><img src="images/rainbow.png"></div></div>
+    		<div class="logo" id="logo" style="display: none;"><img src="images/header-logo.png" width="1"></div>
+    		<!--cloud left-->
+    		<div class="cloud1"><img id="cloud1" src="images/cloud.png" width="60"></div>
+    		<!--cloud right-->
+    		<div class="cloud2"><img id="cloud2" src="images/cloud.png" width="50"></div>
+    	</div>
+    	<div class="header_balloon">
+    		<div class="srkl" style="display:none;"><img id="srkl" src="images/srkl.png" width="1"></div>
+    		<div class="lx" style="display: none;"><img id="lx" src="images/0413.png"></div>
+    		<div class="cloud8" id="cloud8"></div>
+    		<div class="blink_small" id="blink_small">
+    			<div id="slider">
+    				<img src="images/sliders/1.png">
+    				<img src="images/sliders/2.png">
+    				<img src="images/sliders/3.png">
+    				<img src="images/sliders/4.png">
+    				<img src="images/sliders/5.png">
+    				<img src="images/sliders/6.png">
+    				<img src="images/sliders/7.png">
+    				<img src="images/sliders/8.png">
+    				<img src="images/sliders/9.png">
+    				<img src="images/sliders/10.png">
+    				<img src="images/sliders/11.png">
+    				<img src="images/sliders/12.png">
+    				<img src="images/sliders/13.png">
+    				<img src="images/sliders/14.png">
+    				<img src="images/sliders/15.png">
+    				<img src="images/sliders/16.png">
+    				<img src="images/sliders/17.png">
+    				<img src="images/sliders/18.png">
+    			</div>
+    		</div>
+    	</div>
+    	<div class="header_ground">
+    		<div class="tree"><img src="images/tree.png"></div>
+    		<div class="windmill"><img src="images/windmill.png"></div>
+    		<div class="fence_left"><img src="images/fence-left.png"></div>
+    	</div>
+    </div>
+    <div class="footer"><img src="images/dearprincess.png"></div>
+</div>
+
+<!-- jQuery Plugin -->
+<script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../js/lib/jquery-1.11.0.min.js"><\/script>')</script>
+<script type="text/javascript" src="../js/plugins/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../js/clouds/clouds.js"></script>
+<script type="text/javascript" src="../js/plugins/jsAnim.js"></script>
+<script type="text/javascript" src="../js/plugins/jquery.jrumble.1.3.min.js"></script>
+<script type="text/javascript" src="../js/plugins/flux.min.js"></script>
+<script type="text/javascript" src="../js/app.mobile.js"></script>
+</body>
+</html>

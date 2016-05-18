@@ -1,0 +1,461 @@
+@charset "utf-8";
+body {
+  margin: 0;
+  background: #aedfe5 url("../images/sky-background.png") 0 0 repeat-x;
+  height: 600px;
+}
+.clear{
+	clear: both;
+}
+.shadow_cloak{
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	z-index:120;
+	-moz-opacity: 0.5;
+	opacity:.50;
+	filter: alpha(opacity=50);
+	overflow: hidden;
+}
+/* Preloader */
+#preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#fff; /* change if the mask should be a color other than white */
+	z-index:999; /* makes sure it stays on top */
+}
+.item-inner{
+	position:absolute;
+	left:50%; /* centers the loading animation horizontally on the screen */
+	top:40%; 
+}
+
+#container{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+/*header*/
+.header{
+	width: 100%;
+	height: 660px;
+	z-index:100;
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+.branch_repeat{
+	background: url(../images/branch-repeat.png) repeat-x;
+	width: 100%;
+	height: 93px;
+	position: absolute;
+	top: 0;
+	z-index: 111;
+}
+.branch_left{
+	background: url(../images/branch-left.png) repeat-x;
+	width: 259px;
+	height: 245px;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	z-index: 111;
+}
+.branch_right{
+	background: url(../images/branch-right.png) repeat-x;
+	width: 259px;
+	height: 245px;
+	position: absolute;
+	top: 30px;
+	right: 0;
+	z-index: 111;
+}
+.lucky_grass_left{
+	background: url(../images/luck-grass-left.png) repeat-x;
+	width: 98px;
+	height: 398px;
+	position: absolute;
+	top: 250px;
+	left: 0;
+	z-index: 111;	
+}
+.lucky_grass_right{
+	background: url(../images/luck-grass-right.png) repeat-x;
+	width: 153px;
+	height: 363px;
+	position: absolute;
+	top: 200px;
+	right: 0px;
+	z-index: 111;	
+}
+.pistill{
+	position: absolute;
+	z-index: 112;
+	top: 125px;
+	left: 220px;
+	width: 58px;
+	height: 56px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.drop1{
+	position: absolute;
+	z-index: 112;
+	top: 305px;
+	left: 120px;
+}
+.drop2{
+	position: absolute;
+	z-index: 112;
+	top: 365px;
+	left: 110px;
+}
+.drop3{
+	position: absolute;
+	z-index: 112;
+	top: 455px;
+	left: 140px;
+}
+.drop4{
+	position: absolute;
+	z-index: 112;
+	top: 405px;
+	left: 100px;
+}
+.drop5{
+	position: absolute;
+	z-index: 112;
+	top: 505px;
+	left: 100px;
+}
+.drop6{
+	position: absolute;
+	z-index: 112;
+	top: 305px;
+	right: 120px;
+}
+.drop7{
+	position: absolute;
+	z-index: 112;
+	top: 365px;
+	right: 110px;
+}
+.drop8{
+	position: absolute;
+	z-index: 112;
+	top: 455px;
+	right: 140px;
+}
+.drop9{
+	position: absolute;
+	z-index: 112;
+	top: 405px;
+	right: 100px;
+}
+.drop10{
+	position: absolute;
+	z-index: 112;
+	top: 255px;
+	right: 130px;
+}
+.star{
+	position: absolute;
+	z-index: 112;
+	top: 90px;
+	left: 400px;	
+}
+.shine_left{
+	position: absolute;
+	z-index: 112;
+	top: -20px;
+	left: -20px;
+}
+.shine_right{
+	position: absolute;
+	z-index: 112;
+	top: -20px;
+	right: -20px;
+}
+.meteor{
+	width: 80px;
+	height: 37px;
+}
+/*banner*/
+.header_banner{
+	position:relative;
+	width: 100%;
+	height: 250px;
+	width: 800px;
+	margin: 0 auto;
+}
+.header_banner .rainbow{
+	width: 0;
+	height: 195px;
+	width: 561px;
+	margin: auto;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+}
+.header_banner .logo{
+	width: 288px;
+	height: 161px;
+	margin: auto;  
+	position: absolute;  
+	top: 70px;
+	left: 0;
+	right: 0;
+}
+/*cloud*/
+.header_banner .cloud1{
+	position: absolute;  
+	top: 180px;
+	left: 30px;
+	right: 0;
+	z-index: 106;
+}
+.header_banner .cloud2{
+	position: absolute;  
+	top: 190px;
+	left: 130px;
+	right: 0;
+	z-index: 105;
+}
+.header_banner .cloud3{
+	position: absolute;  
+	top: 265px;
+	left: 150px;
+	right: 0;
+	z-index: 105;
+}
+.header_banner .cloud4{
+	position: absolute;  
+	top: 275px;
+	left: 60px;
+	right: 0;
+	z-index: 105;
+}
+.header_banner .cloud5{
+	position: absolute;  
+	top: 220px;
+	right: 0px;
+	z-index: 106;
+}
+.header_banner .cloud6{
+	position: absolute;  
+	top: 270px;
+	right: 135px;
+	z-index: 107;
+}
+.header_banner .cloud7{
+	position: absolute;  
+	top: 320px;
+	right: 25px;
+	z-index: 105;
+}
+/*header balloon*/
+.header_balloon{
+	position:relative;
+	width: 100%;
+	height: 220px;
+	width: 960px;
+	margin: 0 auto;
+}
+.header_balloon .balloon1{
+	position: absolute;  
+	top: -8px;
+	right: 15%;
+	z-index: 106;	
+}
+.header_balloon .balloon2{
+	position: absolute;  
+	top: -8px;
+	left: 15%;
+	z-index: 106;
+}
+.header_balloon .balloon5{
+	position: absolute;  
+	top: 110px;
+	left: 0;
+	z-index: 103;	
+}
+.header_balloon .balloon6{
+	position: absolute;  
+	top: 110px;
+	right: 0;
+	z-index: 103;	
+}
+
+.header_balloon .srkl{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 376px;
+	margin: 0 auto;
+	z-index: 111;
+	text-align: center;
+}
+.header_balloon .lx{
+	position: absolute;
+	top: 10px;
+	left: 450px;
+	z-index: 111;
+	cursor:pointer;
+}
+.header_balloon .cloud8{
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	background: url(../images/cloud2.png);
+	height: 66px;
+	z-index: 112;
+}
+.header_balloon .almond_superman_left{
+	position: absolute;
+	top: 40px;
+	left: 160px;
+	z-index: 117;
+	display: none;
+}
+.header_balloon .chat_left{
+	position: absolute;
+	top: -100px;
+	left: 10px;
+	z-index: 108;
+	display: none;
+}
+.header_balloon .cloud_left{
+	position: absolute;
+	top: 160px;
+	left: 50px;
+	display: none;
+}
+.header_balloon .almond_superman_right{
+	position: absolute;
+	top: 40px;
+	right: 160px;
+	z-index: 117;
+	display: none;
+}
+.header_balloon .chat_right{
+	position: absolute;
+	top: -100px;
+	right: 10px;
+	z-index: 108;
+	display: none;
+}
+.header_balloon .cloud_right{
+	position: absolute;
+	top: 160px;
+	right: 50px;
+	display: none;
+}
+.header_balloon .blink_small{
+	position: absolute;
+	top: 85px;
+	left: 0;
+	right: 0;
+	width: 88px;
+	height: 110px;
+	margin: 0 auto;
+	background: #fff;
+	border: 5px solid #fff;
+	border-radius: 10px;
+	cursor: pointer;
+	z-index: 116;
+	display: none;
+}
+.header_balloon .blink_small:hover{
+	box-shadow: 3px 3px 10px 2px #888;
+}
+.blink_large{
+	position: absolute;
+	top: 33%;
+	left: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	display: none;
+	margin: 0 auto;
+	z-index: 125;
+	overflow: hidden;
+}
+/*header ground*/
+.header_ground{
+	width: 1000px;
+	height: 130px;
+	position:relative;
+	margin: 0 auto;
+	bottom: 0;
+	z-index: 100;
+}
+.header_ground .grass{
+	position: absolute;
+	bottom: 0;
+	left: 10px;
+	z-index: 98;
+}
+.header_ground .tree{
+	position: absolute;
+	top: 13px;
+	left: -25px;
+	z-index: 99;
+}
+.header_ground .windmill{
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	z-index: 95;
+}
+.header_ground .happybirthday{
+	position: absolute;
+	top: 5px;
+	left: 0;
+	right: 0;
+	z-index: 96;
+	width: 792px;
+	margin: 0 auto;
+}
+.header_ground .fence_left{
+	position: absolute;
+	left: 20px;
+	bottom: 15px;
+	z-index: 100;
+}
+.header_ground .fence_right{
+	position: absolute;
+	right: 55px;
+	bottom: 15px;
+	z-index: 100;
+}
+.header_ground .dearprincess{
+	position: absolute;
+	left: 385px;
+	top: 25px;
+	z-index: 100;
+}
+/*leaves float*/
+.AutomLeaf {
+    position: fixed;
+    opacity: 0;
+    z-index: 999;
+}
+
+.AutomLeaffalling {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 999;
+}
